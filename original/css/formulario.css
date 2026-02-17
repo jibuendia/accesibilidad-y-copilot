@@ -1,0 +1,40 @@
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+
+input {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #bfcbd8;
+  border-radius: 8px;
+}
+
+select,
+textarea {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #bfcbd8;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  background: #d7dee6;
+  color: #e5ebf1;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus-visible {
+  background: #d2d9e1;
+}

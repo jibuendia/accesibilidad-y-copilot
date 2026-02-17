@@ -1,0 +1,30 @@
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+caption {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+th,
+td {
+  border: 1px solid #d2dbe6;
+  padding: 0.65rem;
+  text-align: left;
+}
+
+thead th {
+  background: #d6dde6;
+  color: #e7edf3;
+}
+
+tbody tr:nth-child(even) {
+  background: #f9fbfd;
+}

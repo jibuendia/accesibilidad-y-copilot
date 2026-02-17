@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesibilidad y Copilot | Inicio</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/main.js" defer></script>
+</head>
+<body data-page="inicio">
+  <a class="skip-link" href="#zona-principal">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>Accesibilidad y Copilot</h1>
+      <p>Practica base para validacion WCAG 2.2</p>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="./index.html" data-nav="inicio" tabindex="4">Inicio</a></li>
+        <li><a href="./formulario.html" data-nav="formulario" tabindex="2">Formulario</a></li>
+        <li><a href="./tabla.html" data-nav="tabla" tabindex="6">Tabla</a></li>
+        <li><a href="./media.html" data-nav="media" tabindex="1">Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido" class="container">
+    <section class="panel">
+      <h4>Resumen del sitio</h4>
+      <p>
+        Esta miniweb incluye tres paginas de trabajo: un formulario para enviar quejas,
+        una tabla de datos y una seccion multimedia. Desde el encabezado puedes moverte
+        de forma directa entre todas las paginas.
+      </p>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h6>Formulario</h6>
+        <p>Pagina con formulario para registrar una queja.</p>
+        <a class="btn-link" href="./formulario.html">haz clic aqui</a>
+      </article>
+      <article class="card">
+        <h3>Tabla</h3>
+        <p>Ejemplo de tabla de informacion para analisis y mejoras.</p>
+        <a class="btn-link" href="./tabla.html"></a>
+      </article>
+      <article class="card">
+        <h3>Media</h3>
+        <p>Ejemplo de contenido con imagen, audio y video.</p>
+        <a class="btn-link" href="./media.html">haz clic aqui</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Proyecto: Accesibilidad y Copilot</small>
+  </footer>
+</body>
+</html>

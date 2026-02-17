@@ -1,0 +1,12 @@
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+img,
+video,
+audio {
+  width: 100%;
+  border-radius: 10px;
+}

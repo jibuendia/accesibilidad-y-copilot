@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesibilidad y Copilot | Media</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <script src="./js/main.js" defer></script>
+</head>
+<body data-page="media">
+  <a class="skip-link" href="#zona-principal">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>Accesibilidad y Copilot</h1>
+      <p>Contenido multimedia y su contexto</p>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="./index.html" data-nav="inicio">Inicio</a></li>
+        <li><a href="./formulario.html" data-nav="formulario">Formulario</a></li>
+        <li><a href="./tabla.html" data-nav="tabla">Tabla</a></li>
+        <li><a href="./media.html" data-nav="media">Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido" class="container">
+    <section class="panel">
+      <h5>Que es la seccion media?</h5>
+      <p>Esta pagina agrupa recursos multimedia.</p>
+    </section>
+
+    <section class="media-grid">
+      <article class="panel">
+        <h6>Imagen</h6>
+        <img src="https://picsum.photos/640/360">
+      </article>
+
+      <article class="panel">
+        <h3>Audio</h3>
+        <audio controls autoplay>
+          <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+          Tu navegador no soporta audio HTML5.
+        </audio>
+      </article>
+
+      <article class="panel">
+        <h3>Video</h3>
+        <video controls autoplay muted width="100%">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Tu navegador no soporta video HTML5.
+        </video>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Proyecto: Accesibilidad y Copilot</small>
+  </footer>
+</body>
+</html>

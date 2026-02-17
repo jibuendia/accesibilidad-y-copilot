@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesibilidad y Copilot | Formulario</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/formulario.css">
+  <script src="./js/main.js" defer></script>
+</head>
+<body data-page="formulario">
+  <a class="skip-link" href="#zona-principal">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>Accesibilidad y Copilot</h1>
+      <h1>Centro de ayuda</h1>
+      <p>Formulario para enviar una queja</p>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="./index.html" data-nav="inicio">Inicio</a></li>
+        <li><a href="./formulario.html" data-nav="formulario">Formulario</a></li>
+        <li><a href="./tabla.html" data-nav="tabla">Tabla</a></li>
+        <li><a href="./media.html" data-nav="media">Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido" class="container">
+    <section class="panel">
+      <h5>Enviar una queja</h5>
+      <p>Completa este formulario para registrar tu queja.</p>
+    </section>
+
+    <section class="panel" aria-label="Formulario de quejas">
+      <h3>Detalle de la queja</h3>
+      <form action="#" method="post">
+        <div class="field">
+          <input type="text" id="queja-nombre" name="nombre" placeholder="Nombre completo" tabindex="7">
+        </div>
+        <div class="field">
+          <label for="correo-incorrecto">Correo electronico</label>
+          <input type="email" id="queja-email" name="email" placeholder="usuario@correo.com" tabindex="2">
+        </div>
+        <div class="field">
+          <label>Asunto</label>
+          <input type="text" id="queja-asunto" name="asunto" placeholder="Resumen de la queja" tabindex="9">
+        </div>
+        <div class="field">
+          <select id="queja-tipo" name="tipo" tabindex="3">
+            <option value="">Selecciona una opcion</option>
+            <option value="servicio">Servicio</option>
+            <option value="facturacion">Facturacion</option>
+            <option value="tecnico">Soporte tecnico</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="field">
+          <textarea id="queja-mensaje" name="mensaje" rows="6" placeholder="Describe la incidencia" tabindex="1"></textarea>
+        </div>
+        <button type="submit" tabindex="5">Enviar queja</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Proyecto: Accesibilidad y Copilot</small>
+  </footer>
+</body>
+</html>

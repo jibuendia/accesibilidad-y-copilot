@@ -1,0 +1,152 @@
+:root {
+  --bg: #f4f7fb;
+  --panel: #ffffff;
+  --text: #112028; /* texto principal oscuro para contraste */
+  --muted: #516c78;
+  --primary: #0b66ff; /* azul accesible */
+  --primary-dark: #084fe6;
+  --border: #d9e2ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Respeta el foco; usa :focus-visible para usuarios de teclado */
+
+/* Utilidad para lector de pantalla */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 8px;
+  background: var(--panel);
+  color: var(--primary-dark);
+  padding: 8px 10px;
+  z-index: 1000;
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 8px;
+}
+
+.site-header {
+  background: linear-gradient(120deg, #cfe8ef, #dff0f6);
+  color: var(--text);
+  padding: 1rem;
+}
+
+.brand h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.5rem;
+}
+
+.brand p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.nav-list a {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-dark);
+  border: 1px solid rgba(31, 111, 139, 0.12);
+  padding: 0.35rem 0.7rem;
+  border-radius: 8px;
+  background: transparent;
+}
+
+.nav-list a:hover,
+.nav-list a:focus-visible,
+.nav-list a.active {
+  background: var(--primary);
+  color: #ffffff;
+  outline: none;
+}
+
+/* foco visible para enlaces, botones e inputs */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+}
+
+.container {
+  width: min(1024px, 92%);
+  margin: 1.5rem auto;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.45rem 0.75rem;
+  background: var(--primary);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.btn-link:hover,
+.btn-link:focus-visible {
+  background: var(--primary-dark);
+}
+
+.site-footer {
+  padding: 1rem;
+  text-align: center;
+}

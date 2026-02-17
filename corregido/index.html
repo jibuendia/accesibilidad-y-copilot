@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesibilidad y Copilot | Inicio</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/main.js" defer></script>
+</head>
+<body data-page="inicio">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>Accesibilidad y Copilot</h1>
+      <p>Práctica base para validación WCAG 2.2</p>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="./index.html" data-nav="inicio">Inicio</a></li>
+        <li><a href="./formulario.html" data-nav="formulario">Formulario</a></li>
+        <li><a href="./tabla.html" data-nav="tabla">Tabla</a></li>
+        <li><a href="./media.html" data-nav="media">Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido" class="container">
+    <section class="panel">
+      <h2>Resumen del sitio</h2>
+      <p>
+        Esta miniweb incluye tres páginas de trabajo: un formulario para enviar quejas,
+        una tabla de datos y una sección multimedia. Desde el encabezado puedes moverte
+        de forma directa entre todas las páginas.
+      </p>
+    </section>
+
+    <section class="cards" aria-labelledby="recursos-titulo">
+      <h3 id="recursos-titulo" class="sr-only">Recursos del sitio</h3>
+      <article class="card">
+        <h4>Formulario</h4>
+        <p>Página con formulario para registrar una queja.</p>
+        <a class="btn-link" href="./formulario.html">Abrir formulario</a>
+      </article>
+      <article class="card">
+        <h4>Tabla</h4>
+        <p>Ejemplo de tabla de información para análisis y mejoras.</p>
+        <a class="btn-link" href="./tabla.html">Ver tabla</a>
+      </article>
+      <article class="card">
+        <h4>Media</h4>
+        <p>Ejemplo de contenido con imagen, audio y video.</p>
+        <a class="btn-link" href="./media.html">Ver media</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Proyecto: Accesibilidad y Copilot</small>
+  </footer>
+</body>
+</html>

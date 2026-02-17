@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesibilidad y Copilot | Tabla</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/tabla.css">
+  <script src="./js/main.js" defer></script>
+</head>
+<body data-page="tabla">
+  <a class="skip-link" href="#zona-principal">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>Accesibilidad y Copilot</h1>
+      <p>Ejemplo de tabla con texto explicativo</p>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="./index.html" data-nav="inicio">Inicio</a></li>
+        <li><a href="./formulario.html" data-nav="formulario">Formulario</a></li>
+        <li><a href="./tabla.html" data-nav="tabla">Tabla</a></li>
+        <li><a href="./media.html" data-nav="media">Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido" class="container">
+    <section class="panel">
+      <h5>Que representa esta tabla?</h5>
+      <p>La tabla muestra un ejemplo de seguimiento de tareas por modulo.</p>
+    </section>
+
+    <section class="panel">
+      <h6>Seguimiento de modulos</h6>
+      <div class="table-wrap">
+        <table role="presentation">
+          <thead>
+            <tr>
+              <td>Modulo</td>
+              <td>Actividad</td>
+              <td>Fecha</td>
+              <td>Estado</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Diseno de interfaces</td>
+              <td>Maquetacion base</td>
+              <td>2026-02-10</td>
+              <td>Completado</td>
+            </tr>
+            <tr>
+              <td>Accesibilidad</td>
+              <td>Validacion inicial</td>
+              <td>2026-02-12</td>
+              <td>En progreso</td>
+            </tr>
+            <tr>
+              <td>Pruebas</td>
+              <td>Revision con herramientas</td>
+              <td>2026-02-15</td>
+              <td>Pendiente</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>Proyecto: Accesibilidad y Copilot</small>
+  </footer>
+</body>
+</html>
