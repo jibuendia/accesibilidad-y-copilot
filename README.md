@@ -156,8 +156,7 @@ This project shows a full AI-assisted accessibility workflow: baseline analysis,
 
 
 ## URL de acceso web
-- .\tarea\Accesibilidad y Copilot\corregido: https://accesibilidad-corregido.web.app
-- Alternativa FirebaseApp: https://accesibilidad-corregido.firebaseapp.com
-- .\tarea\Accesibilidad y Copilot\original: https://accesibilidad-original.web.app
-- Alternativa FirebaseApp: https://accesibilidad-original.firebaseapp.com
+- Copilot\corregido: https://accesibilidad-corregido.web.app
+- Copilot\original: https://accesibilidad-original.web.app
+
 
