@@ -151,3 +151,13 @@ Validation reports show a clear improvement from `original/` to `corregido/`, re
 
 ### 9. Conclusion
 This project shows a full AI-assisted accessibility workflow: baseline analysis, correction prompt, iterative validation, and comparative evidence. The final result is oriented to **WCAG 2.2 AA** compliance.
+
+
+
+
+## URL de acceso web
+- .\tarea\Accesibilidad y Copilot\corregido: https://accesibilidad-corregido.web.app
+- Alternativa FirebaseApp: https://accesibilidad-corregido.firebaseapp.com
+- .\tarea\Accesibilidad y Copilot\original: https://accesibilidad-original.web.app
+- Alternativa FirebaseApp: https://accesibilidad-original.firebaseapp.com
+
